@@ -10,7 +10,6 @@
 body {
   color: #222;
   background-color: #f5f7fa;
-  background-image: url('images/bg.jpg'); /* <-- YOUR IMAGE HERE */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -67,7 +66,7 @@ body {
 .hero {
   height: 90vh;
   background: linear-gradient(rgba(26, 26, 128, 0.6), rgba(26, 26, 128, 0.6)),
-    url('images/landing.jpg') center/cover no-repeat;
+    url('images/im.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
