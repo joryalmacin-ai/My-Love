@@ -1,4 +1,3 @@
-
 /* ===== Global Styles ===== */
 * {
   margin: 0;
@@ -9,12 +8,7 @@
 
 body {
   color: #222;
-  background-color: #f5f7fa;
-  background-image: url('images/im.jpg'); /* <-- YOUR IMAGE HERE */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #fff;
 }
 
 /* ===== Navbar ===== */
@@ -23,7 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 5%;
-  background-color: #1a1a80;
+  background-color: #1a1a80; /* Deep blue */
   color: #fff;
 }
 
@@ -46,7 +40,7 @@ body {
 
 .navbar ul li a:hover,
 .navbar ul li a.active {
-  color: #ffd700;
+  color: #ffd700; /* Gold */
 }
 
 .hamburger {
@@ -67,13 +61,12 @@ body {
 .hero {
   height: 90vh;
   background: linear-gradient(rgba(26, 26, 128, 0.6), rgba(26, 26, 128, 0.6)),
-    url('images/im.jpg') center/cover no-repeat;
+    url('../images/im.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
-  padding: 0 1rem;
 }
 
 .hero-content h1 {
@@ -82,7 +75,7 @@ body {
 }
 
 .hero-content span {
-  color: #ff3366;
+  color: #ff3366; /* Romantic pink */
 }
 
 .hero-content p {
@@ -97,7 +90,6 @@ body {
   text-decoration: none;
   margin: 0 0.5rem;
   transition: 0.3s;
-  display: inline-block;
 }
 
 .btn:hover {
@@ -188,31 +180,10 @@ footer .social-links a:hover {
   color: #ff3366;
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive Design ===== */
 @media (max-width: 768px) {
-
   .hamburger {
     display: block;
-  }
-
-  .navbar ul {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    flex-direction: column;
-    background-color: #1a1a80;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    transition: 0.3s ease;
-  }
-
-  .navbar ul.active {
-    left: 0;
-  }
-
-  .navbar ul li {
-    padding: 1rem 0;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -225,6 +196,26 @@ footer .social-links a:hover {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #1a1a80;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    left: 0;
   }
 
   .hero-content h1 {
